@@ -170,7 +170,7 @@ const App = () => {
             <Footer />
           </Route>
           <Route path="/">
-            <AmplifySignOut/>
+            <AmplifySignOut />
             <Header />
             <Home />
             <Footer />
