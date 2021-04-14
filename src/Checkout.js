@@ -26,9 +26,8 @@ function Checkout() {
               title={item.title}
               image={item.image}
               price={item.price}
-              price1={item.price1}
-              price2={item.price2}
-              rating={item.rating}
+              price1type={item.price1type}
+              price2type={item.price2type}
             />
           ))}
         </div>

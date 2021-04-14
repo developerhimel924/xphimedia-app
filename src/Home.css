@@ -1,4 +1,4 @@
-.home__container{
+.home__container {
   background-color: #fff;
 }
 .home {
@@ -14,12 +14,8 @@
   flex-wrap: wrap;
   justify-content: space-around;
   z-index: 1;
-}
-
-.home__image {
-  width: 100%;
-  z-index: -1;
-  margin-bottom: -150px;
+  transform: scale(1);
+  margin-top: -200px;
 }
 .home__row__content {
   padding: 10px;
@@ -29,26 +25,28 @@
   text-align: center;
   justify-content: center;
   max-width: 330px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px #777777;
-  transition: all .1s linear;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #dfdede;
+  transition: all 0.1s linear;
   cursor: pointer;
 }
-.home__row__content h2{
+.home__row__content h2 {
   font-weight: 500;
   padding: 10px 0px;
+  font-size: 25px;
 }
-.home__row__content:hover{
+.home__row__content:hover {
   transform: scale(1.05);
 }
 .signin__design {
-  height: 100px;
+  width: 100%;
+  height: 120px;
   justify-content: center !important;
   display: flex;
   flex-direction: column;
   cursor: initial;
 }
-.signin__button{
+.signin__button {
   background-color: #ffc107;
   border: none;
   padding: 10px 50px;
@@ -60,10 +58,36 @@
   outline: none;
   margin: 10px 0px;
 }
-.signin__button:hover{
+.signin__button:hover {
   background-color: #e7ae03;
 }
 .home__row__content img {
   width: 65%;
   margin: 5px 0px;
+}
+.mobile__end {
+  display: none;
+}
+a.alinkColor {
+  color: #000;
+}
+@media (max-width: 768px) {
+  .home__row {
+    margin-top: 0px;
+  }
+  .home__row__content {
+    max-width: 100%;
+  }
+  .desktop__end {
+    display: none;
+  }
+  .mobile__start {
+    display: block;
+    box-shadow: 0px 15px 25px -20px #000;
+    width: 100%;
+    padding: 20px;
+  }
+  .mobile__start > p {
+    font-size: 20px;
+  }
 }

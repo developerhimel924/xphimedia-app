@@ -5,28 +5,19 @@
   margin: 100px 0px;
   padding: 0px 100px;
 }
-
 .books__details__info {
   max-width: 800px;
   margin: 0px 100px;
 }
 .books__img {
-  box-shadow: -15px -15px 15px rgb(255 255 255 / 25%),
-    15px 15px 15px rgb(0 0 0 / 10%);
   padding: 20px;
   transition: all 0.3s linear;
 }
 
 .books__img:hover {
-  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.1),
-    15px 15px 15px rgba(255, 255, 255, 0.2),
-    inset -5px -5px 5px rgba(0, 0, 0, 0.1),
-    inset 5px 5px 5px rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
 .books__img1 {
-  box-shadow: -15px -15px 15px rgb(255 255 255 / 25%),
-    15px 15px 15px rgb(0 0 0 / 10%);
   padding: 20px;
   transition: all 0.3s linear;
   width: 250px;
@@ -34,14 +25,12 @@
 }
 
 .books__img1:hover {
-  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.1),
-    15px 15px 15px rgba(255, 255, 255, 0.2),
-    inset -5px -5px 5px rgba(0, 0, 0, 0.1),
-    inset 5px 5px 5px rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
 .books__imginfo p {
   margin: 10px 0px;
+  color: #232f3e;
+  text-align: start;
 }
 .authorP {
   border-top: 1px solid #7c7c7c;
@@ -52,8 +41,7 @@
   border-radius: 50%;
 }
 .book__name {
-  font-weight: 500;
-  color: #f0601e;
+  color: #232f3e;
 }
 .author__name {
   font-weight: 300;
@@ -131,5 +119,25 @@
 .author__target {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+.author__target > p {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .books__info__container {
+    padding: 0px 30px;
+    margin: 50px 0px;
+  }
+  .books__details__info {
+    margin: 0px;
+    padding-top: 50px;
+  }
+  .books__cart {
+    width: 100%;
+  }
+  .books__imginfo {
+    width: 100%;
+    text-align: center;
+  }
 }

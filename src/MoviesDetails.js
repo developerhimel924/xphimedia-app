@@ -2,13 +2,12 @@ import { AddShoppingCart } from "@material-ui/icons";
 import React from "react";
 import { useStateValue } from "./StateProvider";
 import "./BooksDetails.css";
+import { useState } from "react";
 
 function MoviesDetails({
   id,
   title,
   image,
-  price,
-  rating,
   author,
   price1,
   price2,
@@ -19,6 +18,11 @@ function MoviesDetails({
 }) {
   const [{ basket }, dispatch] = useStateValue();
 
+  const [showMainPrice, setshowMainPrice] = useState(price1);
+  const handleShowMainPrice = (event) => {
+    setshowMainPrice(Number(event.target.value));
+  };
+
   const addToBasket = () => {
     // dispatch the item into the data layer
     dispatch({
@@ -27,9 +31,7 @@ function MoviesDetails({
         id: id,
         title: title,
         image: image,
-        price: price,
-        price1: price1,
-        price2: price2,
+        price: showMainPrice,
       },
     });
   };
@@ -44,16 +46,20 @@ function MoviesDetails({
         <p className="author__name">written, directed & edited by {author}</p>
         <div className="details__of__book">
           <p className="formatStyles">Format Styles</p>
-          <div className="booksInfo__btn">
-            <button onClick={addToBasket}>
-              <p>Hard Copy</p>
-              <strong>${price1}</strong>
-            </button>
-            <button onClick={addToBasket}>
-              <p>Digital Copy</p>
-              <strong>${price2}</strong>
-            </button>
-          </div>
+
+          <div class="SelectPrice__Format__div">
+              <select
+                onClick={handleShowMainPrice}
+                class="country__Select"
+              >
+                <option value={null} selected disabled>
+                  Select Format:
+                </option>
+                <option value={price1}>Hard Copy: $ {price1}</option>
+                <option value={price2}>Digital Copy: $ {price2}</option>
+              </select>
+            </div>
+            <p>Selected Price: {showMainPrice}</p>
           <p className="books__description">{booksdetails}</p>
         </div>
       </div>

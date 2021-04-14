@@ -91,35 +91,35 @@ const XphimBooks = () => {
               <Jesus
                 title="Who is Jesus?"
                 price={18.99}
-                image="https://files.stripe.com/links/MDB8YWNjdF8xSHBrVExDd2RNOWI0elhmfGZsX3Rlc3RfUmRCZFpMZkV6MTcwVWVTWklxUkk3N1F200f9psmcxN"
+                image="https://firebasestorage.googleapis.com/v0/b/xphimedia.appspot.com/o/2.png?alt=media&token=d916248f-8ada-4953-ba5e-cbbd57c474b4"
               />
             </Link>
             <Link exact to="/Adamtree">
               <Jesus
                 title="Ad'am the Tree of Life"
                 price={"Free"}
-                image="https://xphimedia.com/img/1.png"
+                image="https://firebasestorage.googleapis.com/v0/b/xphimedia.appspot.com/o/1.png?alt=media&token=5e8282fa-23e5-48a9-92f9-c696ba830b05"
               />
             </Link>
             <Link exact to="/AdamBook">
               <Jesus
                 title="Who was Ad'am?"
                 price={18.99}
-                image="https://xphimedia.com/img/3.png"
+                image="https://firebasestorage.googleapis.com/v0/b/xphimedia.appspot.com/o/3.png?alt=media&token=5098d1c6-d09b-4b37-b1f4-95543adbb264"
               />
             </Link>
             <Link exact to="/Awaken">
               <Jesus
                 title="Awaken"
                 price={18.99}
-                image="https://xphimedia.com/img/4.png"
+                image="https://firebasestorage.googleapis.com/v0/b/xphimedia.appspot.com/o/4.png?alt=media&token=36076aba-8ebb-4654-aaae-08e1bac0c674"
               />
             </Link>
             <Link exact to="/ThewhitelieBook">
               <Jesus
                 title="White Lie Black Truth"
                 price={18.99}
-                image="https://xphimedia.com/img/5.png"
+                image="https://firebasestorage.googleapis.com/v0/b/xphimedia.appspot.com/o/5.png?alt=media&token=c9022eea-48f3-4365-9603-abadc3783a79"
               />
             </Link>
           </div>

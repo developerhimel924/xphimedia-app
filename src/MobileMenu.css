@@ -1,0 +1,40 @@
+@media (min-width: 600px) {
+  .makeStyles-search-4 {
+    margin: 0px !important;
+  }
+}
+.makeStyles-search-4 {
+  border-radius: 0px !important;
+}
+.MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+.makeStyles-search-4:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.mobile__signIn {
+  display: flex;
+  flex-direction: row;
+}
+.mobile__header__signIn {
+  color: #fff;
+  margin-right: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.header__basketCount {
+  color: #ffffff;
+  background: #ee5f1e;
+  padding: 0px 7px;
+  border-radius: 20px;
+}
+.mobile__header__bottom {
+  color: rgb(238, 238, 238);
+}
+.mobile__header__bottom__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0px;
+}

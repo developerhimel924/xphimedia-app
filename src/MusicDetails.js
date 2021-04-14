@@ -2,13 +2,12 @@ import { AddShoppingCart } from "@material-ui/icons";
 import React from "react";
 import { useStateValue } from "./StateProvider";
 import "./BooksDetails.css";
+import { useState } from "react";
 
 function MusicDetails({
   id,
   title,
   image,
-  price,
-  rating,
   author,
   price1,
   price2,
@@ -19,6 +18,11 @@ function MusicDetails({
 }) {
   const [{ basket }, dispatch] = useStateValue();
 
+  const [showMainPrice, setshowMainPrice] = useState(price1);
+  const handleShowMainPrice = (event) => {
+    setshowMainPrice(Number(event.target.value));
+  };
+
   const addToBasket = () => {
     // dispatch the item into the data layer
     dispatch({
@@ -27,9 +31,7 @@ function MusicDetails({
         id: id,
         title: title,
         image: image,
-        price: price,
-        price1: price1,
-        price2: price2,
+        price: showMainPrice,
       },
     });
   };
@@ -44,16 +46,17 @@ function MusicDetails({
         <p className="author__name">by {author} (artists)</p>
         <div className="details__of__book">
           <p className="formatStyles">Format Styles</p>
-          <div className="booksInfo__btn">
-            <button onClick={addToBasket}>
-              <p>Physical CD</p>
-              <strong>${price1}</strong>
-            </button>
-            <button onClick={addToBasket}>
-              <p>Download</p>
-              <strong>${price2}</strong>
-            </button>
+
+          <div class="SelectPrice__Format__div">
+            <select onClick={handleShowMainPrice} class="country__Select">
+              <option value={null} selected disabled>
+                Select Format:
+              </option>
+              <option value={price1}>Physical CD: $ {price1}</option>
+              <option value={price2}>Download: $ {price2}</option>
+            </select>
           </div>
+          <p>Selected Price: {showMainPrice}</p>
           <p className="books__description">{booksdetails}</p>
         </div>
       </div>

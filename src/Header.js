@@ -6,6 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
 import Logo from "./Assets/logo.png";
+import MobileMenu from "./MobileMenu";
 
 function Header() {
   // eslint-disable-next-line no-unused-vars
@@ -28,7 +29,7 @@ function Header() {
           <input
             className="header__searchInput"
             type="text"
-            placeholder="Search...."
+            placeholder="search bar XPHIM"
           />
           <SearchIcon className="header__searchIcon" />
         </div>
@@ -95,6 +96,26 @@ function Header() {
         >
           <span>Animations</span>
         </NavLink>
+      </div>
+      {/* Mobile Menu */}
+      {/* <div className="mobile__menu">
+        <div className="mobile__logo">
+          <MenuSharpIcon className="mobile__hamburger" />
+          <Link to="/">
+            <img className="logo__img" src={Logo} alt="header logo" />
+          </Link>
+          <Link to="/checkout">
+            <div className="header__optionBasket">
+              <ShoppingCart />
+              <span className="header__optionLineTwo header__basketCount">
+                {basket?.length}
+              </span>
+            </div>
+          </Link>
+        </div>
+      </div> */}
+      <div className="mobile__menu">
+        <MobileMenu />
       </div>
     </>
   );

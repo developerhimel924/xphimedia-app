@@ -4,18 +4,15 @@
   padding: 20px;
   text-align: center;
   align-items: center;
-  transition: all 0.2s linear !important;
+  transition: all 0.2s cubic-bezier(0.42, 0, 0.25, 1.25) !important;
   transform: scale(1);
-  box-shadow: -15px -15px 15px rgb(255 255 255 / 25%),
-    15px 15px 15px rgb(0 0 0 / 10%);
-  border-radius: 5px;
 }
 
-.movies__list__container{
+.movies__list__container {
   max-width: 400px;
 }
 
-.movies__list img{
+.movies__list img {
   width: 300px !important;
   height: 400px !important;
 }
@@ -29,10 +26,6 @@
 }
 
 .jesus__container:hover {
-  box-shadow: -15px -15px 15px rgba(0, 0, 0, 0.1),
-    15px 15px 15px rgba(255, 255, 255, 0.2),
-    inset -5px -5px 5px rgba(0, 0, 0, 0.1),
-    inset 5px 5px 5px rgba(255, 255, 255, 0.2);
   transform: scale(1.03);
 }
 

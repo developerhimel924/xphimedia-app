@@ -58,7 +58,7 @@ const XphimAnimations = () => {
               <MoviesList
                 title="Spiritman"
                 price={"Subscription Coming Soon"}
-                image="https://xphimedia.com/img/products/spiritman.jpg"
+                image="https://firebasestorage.googleapis.com/v0/b/xphimedia.appspot.com/o/spiritman.jpg?alt=media&token=a8554d48-c95e-4304-9501-3d2c5d3a281f"
               />
             </Link>
           </div>

@@ -5,19 +5,35 @@
 }
 
 body {
-  background-color: #ddd;
+  background-color: #ddd !important;
   margin: 0;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  
+  overflow-wrap: break-word;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
 
-a{
+html::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);
+}
+html::-webkit-scrollbar-thumb {
+  background: #434343;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
+    inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+a {
   text-decoration: none;
 }
-
+a:hover {
+  text-decoration: none !important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -1,51 +1,300 @@
 .payment {
-    background-color: white;
+  background-color: white;
 }
 
 .payment__container > h1 {
-    text-align: center;
-    padding: 10px;
-    font-weight: 400;
-    background-color: rgb(234, 237, 237);
-    border-bottom: 1px solid lightgray;
-  }
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  background-color: rgb(234, 237, 237);
+  border-bottom: 1px solid lightgray;
+  font-size: 1.5rem;
+  color: #6d6d6d;
+}
 
 .payment__container > h1 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .payment__section {
-    display: flex;
-    padding: 20px;
-    margin: 0 20px;
-    border-bottom: 1px solid lightgray;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgray;
 }
 
 .payment__title {
-    flex: 0.2;
+  flex: 0.2;
 }
 
-.payment__address, .payment__items, .payment__details {
-    flex: 0.8;
+.payment__address,
+.payment__items,
+.payment__details {
+  flex: 0.8;
 }
-  
-.payment__details > form {
-    max-width: 400px;
+.payment__details > h3 {
+  padding-bottom: 20px;
+}
+
+.payment__details > form > div > button {
+  background: #f57224;
+  width: 100%;
+  height: 45px;
+  border: 1px solid;
+  font-weight: bolder;
+  margin-top: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
+.paymentSection__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shipping__Address__section {
+  width: 50%;
+  padding: 4rem;
+  margin: 2rem;
+  border: 1px solid #bfc9d4;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+select.country__Select {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #3b3f5c;
+  border-radius: 5px;
+  border: 1px solid #bfc9d4;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.payment__address__info {
+}
+
+.streetInfo input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #3b3f5c;
+  border-radius: 5px;
+  border: 1px solid #bfc9d4;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.streetInfo input:focus {
+  box-shadow: 0px 0px 5px 0px #4361ee;
+  border-color: #4361ee;
+}
+
+select.country__Select:focus {
+  box-shadow: 0px 0px 5px 0px #4361ee;
+  border-color: #4361ee;
+}
+
+.AppSuite input:focus {
+  box-shadow: 0px 0px 5px 0px #4361ee;
+  border-color: #4361ee;
+}
+
+.ZipCode input:focus {
+  box-shadow: 0px 0px 5px 0px #4361ee;
+  border-color: #4361ee;
+}
+
+.City input:focus {
+  box-shadow: 0px 0px 5px 0px #4361ee;
+  border-color: #4361ee;
+}
+
+.fullname__info input:focus {
+  box-shadow: 0px 0px 5px 0px #4361ee;
+  border-color: #4361ee;
+}
+
+.AppSuite input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #3b3f5c;
+  border-radius: 5px;
+  border: 1px solid #bfc9d4;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.fullname__info input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #3b3f5c;
+  border-radius: 5px;
+  border: 1px solid #bfc9d4;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.ZipCode input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #3b3f5c;
+  border-radius: 5px;
+  border: 1px solid #bfc9d4;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.City input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  color: #3b3f5c;
+  border-radius: 5px;
+  border: 1px solid #bfc9d4;
+  transition: all 0.2s ease-in-out 0s;
+}
+h3.ShippingAddrTitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6d6d6d;
+  font-weight: 500;
+  border-bottom: 1px solid #bfc9d4;
+  padding-bottom: 10px;
+  border-radius: 5%;
+}
+
+h5.shippingAddr__Tittle {
+  color: #6d6d6d;
+  font-family: "Poppins";
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.shipping__Address__section:hover {
+  transform: scale(0.98);
+  box-shadow: 0px 0px 6px -1px #4361ee;
+  border-color: #4361ee;
+}
+.shippingAddr__flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.ZipCode {
+  width: 49%;
+}
+
+.City {
+  width: 49%;
+}
+
+.streetInfo {
+  width: 49%;
+}
+
+.AppSuite {
+  width: 49%;
+}
+.payment__section.paymentcard__section {
+  margin: 2rem;
+  border: 1px solid #bfc9d4;
+  width: 30%;
+  padding: 4rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.payment__section.paymentcard__section:hover {
+  transform: scale(0.98);
+  box-shadow: 0px 0px 6px -1px #4361ee;
+  border-color: #4361ee;
+}
+
+.payment__title h3 {
+  color: #6d6d6d;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.cardImg__div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardImg__div img {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.cardImg__div img:last-child {
+  margin-right: 0rem;
+}
+
+h3.paymentMethod__title {
+  text-align: center;
+  border-bottom: 1px solid #bfc9d4;
+  border-radius: 5%;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+h5.Payment__method__details {
+  color: #6d6d6d;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.paymentMethod__wrapper {
+  border-bottom: 1px solid lightgrey;
+  padding: 1rem 0rem;
+}
+
+.payment__priceContainer h5 {
+  margin-top: 1rem;
+  color: #6d6d6d;
+}
+
+.payment__priceContainer > h5 > span {
+  color: #f57224;
+}
+
+@media (max-width: 1450px) {
+  .payment__section.paymentcard__section {
+    width: 45%;
   }
-
-  .payment__details > h3 {
-    padding-bottom: 20px;
+}
+@media (max-width: 1067px) {
+  .paymentSection__wrapper {
+    display: flex;
+    flex-direction: column;
   }
-
-
-  .payment__details > form > div > button {
-    background: #f0c14b;
-    border-radius: 2px;
+  .shipping__Address__section {
+    width: 90%;
+  }
+  .payment__section.paymentcard__section {
+    width: 90%;
+  }
+  .checkoutproduct__div{
     width: 100%;
-    height: 30px;
-    border: 1px solid;
-    font-weight: bolder;
-    margin-top: 10px;
-    border-color: #a88734 #9c7e31 #846a29;
-    color: #111;
   }
+}
+@media (max-width: 500px) {
+  .shipping__Address__section {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  .payment__section.paymentcard__section{
+    padding: 2rem;
+    margin: 1rem;
+  }
+  .shipping__Address__section {
+    width: 94%;
+  }
+  .payment__section.paymentcard__section {
+    width: 94%;
+  }
+}
