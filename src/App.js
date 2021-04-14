@@ -171,6 +171,7 @@ const App = () => {
           </Route>
           <Route path="/">
             <Header />
+            <AmplifySignOut />
             <Home />
             <Footer />
           </Route>
