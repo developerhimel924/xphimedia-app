@@ -170,7 +170,6 @@ const App = () => {
             <Footer />
           </Route>
           <Route path="/">
-            <AmplifySignOut />
             <Header />
             <Home />
             <Footer />
@@ -181,4 +180,4 @@ const App = () => {
   );
 };
 
-export default withAuthenticator(App);
+export default App;
