@@ -29,6 +29,8 @@ import Cointelpro from "./Cointelpro";
 import XphimAnimations from "./Books__pages/XphimAnimations";
 import Spiritman from "./Spiritman";
 import Footer from "./Footer";
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
 
 const promise = loadStripe(
   "pk_test_51HpkTLCwdM9b4zXfHlla5MjMhuMdGKRcE6xlTcIxQ1kcxr2Zsf4s1r7CYjhXnMsBvUre5OUzzRn2TIqp1339RFFP00sJhsLsdU"
@@ -178,4 +180,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);

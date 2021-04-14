@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-xphimediamaster-dev-121923-authRole",
+      "UnauthRoleArn": "arn:aws:iam::094358555459:role/amplify-xphimediamaster-dev-121923-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::094358555459:role/amplify-xphimediamaster-dev-121923-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-xphimediamaster-dev-121923-deployment",
+      "UnauthRoleName": "amplify-xphimediamaster-dev-121923-unauthRole",
+      "StackName": "amplify-xphimediamaster-dev-121923",
+      "StackId": "arn:aws:cloudformation:us-east-1:094358555459:stack/amplify-xphimediamaster-dev-121923/5f61f3a0-9ce9-11eb-ba32-0e1c3468127d",
+      "AmplifyAppId": "dtomcmex6eg9r"
+    },
+    "categories": {
+      "auth": {
+        "xphimediamaster9b768506": {}
+      }
+    }
+  }
+}

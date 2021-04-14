@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "xphimediamaster9b768506": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
