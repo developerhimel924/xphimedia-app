@@ -29,7 +29,7 @@ import Cointelpro from "./Cointelpro";
 import XphimAnimations from "./Books__pages/XphimAnimations";
 import Spiritman from "./Spiritman";
 import Footer from "./Footer";
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { withAuthenticator, AmplifySignOut, AmplifyAuthenticator } from '@aws-amplify/ui-react'
 
 
 const promise = loadStripe(
@@ -170,6 +170,7 @@ const App = () => {
             <Footer />
           </Route>
           <Route path="/">
+            <AmplifySignOut/>
             <Header />
             <Home />
             <Footer />
@@ -180,4 +181,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAuthenticator(App);
